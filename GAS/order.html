@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="site.css" type="text/css"/>
     <title>Bethany Pie Shop</title>
     <style>
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group input,
+        .input-group textarea,
+        .input-group select {
+            padding: 10px;
+            border: 1px solid #999;
+            border-radius: 5px;
+            width: 100%;
+        }
+        label{
+            font-weight: 600;
+        }
+        input[type='reset'] {
+            background:transparent;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        input[type='Submit'] {
+            background:transparent;
+            border: 0;
+            text-decoration: underline;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -46,7 +72,7 @@
                                 <option value="Alaska">Alaska</option>
                                 <option value="Arizona">Arizona</option>
                                 <option value="Arkansas">Arkansas</option>
-                                <option value="Calirfonia">Calirfonia</option> 
+                                <option value="California">California</option> 
                                 <option value="Colorado">Colorado</option>
                                 <option value="Delaware">Delaware</option>
                                 <option value="Florida">Florida</option>
@@ -57,6 +83,18 @@
                         <div><label for="postal-code">Postal Address</label></div>
                         <div><input type="text" name= "postal-code" id="postal-code"></div>
                     </div>
+                    <div class="input-group">
+                        <div><label for="comments">Comments</label></div>
+                        <div>
+                            <textarea
+                            name="comments"
+                            id="comments"
+                            cols="30"
+                            rows="10"></textarea>
+                        </div>
+                    </div>
+                    <input type="reset" value="Reset"/>
+                    <input type="submit" value="Order"/>
                 </form>
             </article>
     </main>
